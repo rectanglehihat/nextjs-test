@@ -13,6 +13,14 @@ export async function getStaticProps() {
     },
   };
 }
+// export async function getStaticProps(context) {
+//   return {
+//     redirect: {
+//       destination: "/",
+//       permanent: true, // triggers 308
+//     },
+//   };
+// }
 
 export default function Home({ allPostsData }) {
   return (
@@ -22,6 +30,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>I am currently learning next.js.</p>
+        <p>브랜치 추가해서 테스트!</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
